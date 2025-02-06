@@ -4,4 +4,6 @@
 
 2. [Homework 2](./homework-2/)
 
+3. [Homework 3](./homework-3/)
+
 Base URL:https://jqiana.github.io/N220-2025/

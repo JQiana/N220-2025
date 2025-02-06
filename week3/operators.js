@@ -37,7 +37,7 @@ myAddress += "Peach" + "St";
 
 console.log("My Address", myAddress);
 
-console.log("Street nane has st:", myAddress.toLowerCase().includes("st"));
+console.log("Street name has st:", myAddress.toLowerCase().includes("st"));
 
 console.log("My address", myAddress.replace("st", "street"));
 
