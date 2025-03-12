@@ -7,7 +7,7 @@ const cart = [];
 function removeItemFC(){
     cart.shift();
 
-    showCart
+    showCart;
 }
 
 function showCart(){
