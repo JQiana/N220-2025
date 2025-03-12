@@ -29,16 +29,17 @@ function updateCart(){
             tr.innerHTML = 
             `<td>${cart[i].name}</td>
             <td>$${cart[i].price}</td>
-            <td><textarea oninput="cart[${i}].SpecialRequest = this.value">${cart[i].SpecialRequest || ""}</textarea></td>
-            <td><button onclick="removeItem(${i})">-</button></td>`;
+            <td><button onclick="removeItem(${i})">remove</button></td>;
+            <td><textarea oninput="cart[${i}].SpecialRequest = this.value">${cart[i].SpecialRequest || ""}</textarea></td>`;
             cartList.appendChild(tr);
             total += cart[i].price;
+
         }
 
         const row = document.createElement("tr");
-        row.innerHTML = `<td>Total</td>
-        <td colspan="3">$${total}</td>`;
+        row.innerHTML = `<td>Total</td><td colspan="3">$${total}</td>`;
         cartList.appendChild(row);
+
     }
 
 }
